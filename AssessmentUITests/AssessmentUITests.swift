@@ -2,7 +2,7 @@
 //  AssessmentUITests.swift
 //  AssessmentUITests
 //
-//  Created by Borqs India on 17/03/20.
+//  Created by VishalP on 17/03/20.
 //  Copyright © 2020 Vishal. All rights reserved.
 //
 

@@ -1,0 +1,92 @@
+{
+  "status": {
+    "code": "0",
+    "description": "success"
+  },
+  "stmts": [
+    {
+      "balance": 4410,
+      "credit": 1000,
+      "debit": 228,
+      "stmtId": "abcd-fgybas-3",
+      "stamtDate": "2020-02-14"
+    },
+    {
+      "balance": 1821,
+      "credit": 0,
+      "debit": 2500,
+      "stmtId": "abcd-fgybas-2",
+      "stamtDate": "2020-01-15"
+    },
+    {
+      "balance": 510.5,
+      "credit": 200.75,
+      "debit": 79,
+      "stmtId": "abcd-fgybas-4",
+      "stamtDate": "2009-02-11"
+    },
+    {
+      "balance": 3750.5,
+      "credit": 777,
+      "debit": 350.5,
+      "stmtId": "abcd-fgybas-5",
+      "stamtDate": "2009-01-12"
+    },
+    {
+      "balance": 3132.32,
+      "credit": 1313,
+      "debit": 2210.75,
+      "stmtId": "abcd-fgybas-6",
+      "stamtDate": "2009-04-09"
+    },
+    {
+      "balance": 2410,
+      "credit": 3000,
+      "debit": 1228.39,
+      "stmtId": "abcd-fgybas-1",
+      "stamtDate": "2020-03-15"
+    },
+    {
+      "balance": 6650.75,
+      "credit": 5120,
+      "debit": 1319.5,
+      "stmtId": "abcd-fgybas-7",
+      "stamtDate": "2013-07-15"
+    },
+    {
+      "balance": 8519.5,
+      "credit": 300.33,
+      "debit": 2124.6,
+      "stmtId": "abcd-fgybas-8",
+      "stamtDate": "2012-11-14"
+    },
+    {
+      "balance": 800,
+      "credit": 200,
+      "debit": 6000,
+      "stmtId": "abcd-fgybas-9",
+      "stamtDate": "2013-11-15"
+    },
+    {
+      "balance": 4510.5,
+      "credit": 120.75,
+      "debit": 2000,
+      "stmtId": "abcd-fgybas-10",
+      "stamtDate": "2011-02-11"
+    },
+    {
+      "balance": 7350.5,
+      "credit": 576,
+      "debit": 5340.5,
+      "stmtId": "abcd-fgybas-11",
+      "stamtDate": "2015-01-12"
+    },
+    {
+      "balance": 1332.32,
+      "credit": 4113,
+      "debit": 1750.75,
+      "stmtId": "abcd-fgybas-12",
+      "stamtDate": "2008-04-09"
+    }
+  ]
+}

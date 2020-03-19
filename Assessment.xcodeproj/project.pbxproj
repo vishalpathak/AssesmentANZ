@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE5202852423A6300098CE15 /* TopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5202842423A6300098CE15 /* TopTableViewCell.swift */; };
 		EEA86E66242101CF00E1CDDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA86E65242101CF00E1CDDA /* AppDelegate.swift */; };
 		EEA86E68242101CF00E1CDDA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA86E67242101CF00E1CDDA /* SceneDelegate.swift */; };
-		EEA86E6A242101CF00E1CDDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA86E69242101CF00E1CDDA /* ViewController.swift */; };
+		EEA86E6A242101CF00E1CDDA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA86E69242101CF00E1CDDA /* HomeViewController.swift */; };
 		EEA86E6D242101CF00E1CDDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEA86E6B242101CF00E1CDDA /* Main.storyboard */; };
 		EEA86E6F242101D000E1CDDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEA86E6E242101D000E1CDDA /* Assets.xcassets */; };
 		EEA86E72242101D000E1CDDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEA86E70242101D000E1CDDA /* LaunchScreen.storyboard */; };
 		EEA86E7D242101D000E1CDDA /* AssessmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA86E7C242101D000E1CDDA /* AssessmentTests.swift */; };
 		EEA86E88242101D000E1CDDA /* AssessmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA86E87242101D000E1CDDA /* AssessmentUITests.swift */; };
+		EEA86E96242108B600E1CDDA /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = EEA86E95242108B600E1CDDA /* test.json */; };
+		EEA86E9C242111DF00E1CDDA /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA86E9B242111DF00E1CDDA /* NetworkService.swift */; };
+		EEA86E9E2421159500E1CDDA /* StatementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA86E9D2421159500E1CDDA /* StatementModel.swift */; };
+		EEA86EA12421218C00E1CDDA /* StatementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA86EA02421218C00E1CDDA /* StatementTableViewCell.swift */; };
+		EEA86EA6242271B400E1CDDA /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA86EA5242271B400E1CDDA /* Util.swift */; };
+		EEA86EA9242275C600E1CDDA /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA86EA8242275C600E1CDDA /* Constant.swift */; };
+		EEA86EAB2422AB4400E1CDDA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA86EAA2422AB4400E1CDDA /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE5202842423A6300098CE15 /* TopTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTableViewCell.swift; sourceTree = "<group>"; };
 		EEA86E62242101CF00E1CDDA /* Assessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEA86E65242101CF00E1CDDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEA86E67242101CF00E1CDDA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EEA86E69242101CF00E1CDDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EEA86E69242101CF00E1CDDA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EEA86E6C242101CF00E1CDDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EEA86E6E242101D000E1CDDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEA86E71242101D000E1CDDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +58,13 @@
 		EEA86E83242101D000E1CDDA /* AssessmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssessmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEA86E87242101D000E1CDDA /* AssessmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssessmentUITests.swift; sourceTree = "<group>"; };
 		EEA86E89242101D000E1CDDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEA86E95242108B600E1CDDA /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
+		EEA86E9B242111DF00E1CDDA /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		EEA86E9D2421159500E1CDDA /* StatementModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementModel.swift; sourceTree = "<group>"; };
+		EEA86EA02421218C00E1CDDA /* StatementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementTableViewCell.swift; sourceTree = "<group>"; };
+		EEA86EA5242271B400E1CDDA /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		EEA86EA8242275C600E1CDDA /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		EEA86EAA2422AB4400E1CDDA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +115,20 @@
 		EEA86E64242101CF00E1CDDA /* Assessment */ = {
 			isa = PBXGroup;
 			children = (
-				EEA86E65242101CF00E1CDDA /* AppDelegate.swift */,
+				EEA86EA7242275B000E1CDDA /* Constants */,
+				EEA86E9F2421214800E1CDDA /* TableViewCells */,
+				EEA86E9A24210FA300E1CDDA /* Util */,
+				EEA86E9924210F8B00E1CDDA /* ViewModel */,
+				EEA86E9824210F6800E1CDDA /* NetworkService */,
+				EEA86E9724210F5E00E1CDDA /* DataModel */,
+				EEA86EA224213BD700E1CDDA /* ViewControllers */,
 				EEA86E67242101CF00E1CDDA /* SceneDelegate.swift */,
-				EEA86E69242101CF00E1CDDA /* ViewController.swift */,
+				EEA86E65242101CF00E1CDDA /* AppDelegate.swift */,
 				EEA86E6B242101CF00E1CDDA /* Main.storyboard */,
 				EEA86E6E242101D000E1CDDA /* Assets.xcassets */,
 				EEA86E70242101D000E1CDDA /* LaunchScreen.storyboard */,
 				EEA86E73242101D000E1CDDA /* Info.plist */,
+				EEA86E95242108B600E1CDDA /* test.json */,
 			);
 			path = Assessment;
 			sourceTree = "<group>";
@@ -126,6 +149,63 @@
 				EEA86E89242101D000E1CDDA /* Info.plist */,
 			);
 			path = AssessmentUITests;
+			sourceTree = "<group>";
+		};
+		EEA86E9724210F5E00E1CDDA /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				EEA86E9D2421159500E1CDDA /* StatementModel.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		EEA86E9824210F6800E1CDDA /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				EEA86E9B242111DF00E1CDDA /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		EEA86E9924210F8B00E1CDDA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EEA86EAA2422AB4400E1CDDA /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EEA86E9A24210FA300E1CDDA /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				EEA86EA5242271B400E1CDDA /* Util.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		EEA86E9F2421214800E1CDDA /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				EEA86EA02421218C00E1CDDA /* StatementTableViewCell.swift */,
+				EE5202842423A6300098CE15 /* TopTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		EEA86EA224213BD700E1CDDA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EEA86E69242101CF00E1CDDA /* HomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EEA86EA7242275B000E1CDDA /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				EEA86EA8242275C600E1CDDA /* Constant.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEA86E72242101D000E1CDDA /* LaunchScreen.storyboard in Resources */,
+				EEA86E96242108B600E1CDDA /* test.json in Resources */,
 				EEA86E6F242101D000E1CDDA /* Assets.xcassets in Resources */,
 				EEA86E6D242101CF00E1CDDA /* Main.storyboard in Resources */,
 			);
@@ -259,8 +340,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEA86E6A242101CF00E1CDDA /* ViewController.swift in Sources */,
+				EEA86E6A242101CF00E1CDDA /* HomeViewController.swift in Sources */,
+				EE5202852423A6300098CE15 /* TopTableViewCell.swift in Sources */,
+				EEA86EAB2422AB4400E1CDDA /* ViewModel.swift in Sources */,
+				EEA86EA12421218C00E1CDDA /* StatementTableViewCell.swift in Sources */,
 				EEA86E66242101CF00E1CDDA /* AppDelegate.swift in Sources */,
+				EEA86E9E2421159500E1CDDA /* StatementModel.swift in Sources */,
+				EEA86EA6242271B400E1CDDA /* Util.swift in Sources */,
+				EEA86EA9242275C600E1CDDA /* Constant.swift in Sources */,
+				EEA86E9C242111DF00E1CDDA /* NetworkService.swift in Sources */,
 				EEA86E68242101CF00E1CDDA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +525,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z2BAKP3ULU;
 				INFOPLIST_FILE = Assessment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,6 +544,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z2BAKP3ULU;
 				INFOPLIST_FILE = Assessment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
