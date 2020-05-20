@@ -13,11 +13,13 @@ class AssessmentTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        print("SetUp called")
         testDateFormats()
         testStringToDate()
     }
 
     override func tearDown() {
+        print("SetUp Ended")
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
@@ -48,15 +50,22 @@ class AssessmentTests: XCTestCase {
     
     func testSortAndGroupArray(){
         let sta1 = Statement(balance: 10.0, credit: 5.0, debit: 2.0, stmtId: "stamt-01", stamtDate: "2020-02-15")
-        let sta2 = Statement(balance: 10.0, credit: 5.0, debit: 2.0, stmtId: "stamt-01", stamtDate: "2014-06-15")
+        let sta2 = Statement(balance: 10.0, credit: 5.0, debit: 2.0, stmtId: "stamt-01", stamtDate: "2014-06-25")
         let sta3 = Statement(balance: 10.0, credit: 5.0, debit: 2.0, stmtId: "stamt-01", stamtDate: "2016-05-10")
         let sta4 = Statement(balance: 10.0, credit: 5.0, debit: 2.0, stmtId: "stamt-01", stamtDate: "2014-02-20")
         let sta5 = Statement(balance: 10.0, credit: 5.0, debit: 2.0, stmtId: "stamt-01", stamtDate: "2020-01-05")
         
-        let arr = [sta1, sta5, sta3, sta4, sta2]
-        var result = Util.sortAndGroupDateByYear(dateArray: arr)
+        let objModel1 = StamentViewModel(statement: sta1)
+        let objModel2 = StamentViewModel(statement: sta2)
+        let objModel3 = StamentViewModel(statement: sta3)
+        let objModel4 = StamentViewModel(statement: sta4)
+        let objModel5 = StamentViewModel(statement: sta5)
+        let arr = [objModel1, objModel2, objModel3, objModel4, objModel5]
         
-        let arrCount = "3"
+        let obj = StatementsViewModel()
+        let result = obj.sortAndGroupDateByYear(dateArray: arr)
+        
+        let arrCount = "4"
         
         let expect = self.expectation(description: arrCount)
         
@@ -69,11 +78,11 @@ class AssessmentTests: XCTestCase {
             XCTFail("Failed with data not sorted and valid")
         }
         
-        self.waitForExpectations(timeout: 30, handler: nil)
+        self.waitForExpectations(timeout: 5, handler: nil)
     }
     
     func testGetDataFromUrl() {
-        NetworkService.sharedService.dataFromURLPath(fileName: BaseFileName) { (res: AllStatement?, err: Error?) in
+        NetworkService.sharedService.dataFromURLPath(urlPath: BaseUrlPath) { (res: AllStatement?, err: Error?) in
             
             if let error = err{
                 XCTFail("Failed to get Data:\(error.localizedDescription)")

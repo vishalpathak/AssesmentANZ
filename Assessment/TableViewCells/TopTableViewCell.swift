@@ -27,16 +27,28 @@ class TopTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
     }
-    
-    func setCurrentData(data: Statement){
-        let month = Util.convertDateFormat(stringDate: data.stamtDate ?? "", givenFormat: "yyyy-MM-dd", expectedFormat: "MMMM")
-        if let name = month{
-            labelCurrentMonth.text = "1 \(name) - Present"
-        }else{
-            labelCurrentMonth.text = "No month"
+    //MARK:- assign viewModel data to UI compenents
+    var statementVM: StamentViewModel?{
+        didSet{
+            let month = Util.convertDateFormat(stringDate: statementVM?.stamtDate ?? "", givenFormat: "yyyy-MM-dd", expectedFormat: "MMMM")
+            if let name = month{
+                labelCurrentMonth.text = "1 \(name) - Present"
+            }else{
+                labelCurrentMonth.text = "No month"
+            }
+            labelCurrentSatement.text = CommonStrings.CurrentStateMent
+            lableBalance.text = ("$\(statementVM?.balance ?? 0.0)")
         }
-        labelCurrentSatement.text = CommonStrings.CurrentStateMent
-        lableBalance.text = ("$\(data.balance ?? 0.0)")
     }
+//    func setCurrentData(data: Statement){
+//        let month = Util.convertDateFormat(stringDate: data.stamtDate ?? "", givenFormat: "yyyy-MM-dd", expectedFormat: "MMMM")
+//        if let name = month{
+//            labelCurrentMonth.text = "1 \(name) - Present"
+//        }else{
+//            labelCurrentMonth.text = "No month"
+//        }
+//        labelCurrentSatement.text = CommonStrings.CurrentStateMent
+//        lableBalance.text = ("$\(data.balance ?? 0.0)")
+//    }
 
 }

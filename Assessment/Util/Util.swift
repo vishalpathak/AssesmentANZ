@@ -30,24 +30,4 @@ class Util: NSObject {
         dateFormatter.locale = Locale.current
         return dateFormatter.date(from: stringDate)
     }
-    
-    static func sortAndGroupDateByYear(dateArray:[Statement]) -> [[Statement]] {
-        if dateArray.isEmpty {
-            return []
-        }
-        var resultArray = [[dateArray[0]]]
-        
-        let calendar = Calendar(identifier: .gregorian)
-        for (prevDate, nextDate) in zip(dateArray, dateArray.dropFirst()) {
-            let date1 = self.convertStringToDate(stringDate: prevDate.stamtDate ?? "", givenFormat: "yyyy-MM-dd")
-            let date2 = self.convertStringToDate(stringDate: nextDate.stamtDate ?? "", givenFormat: "yyyy-MM-dd")
-            if let dt1 = date1, let dt2 = date2{
-            if !calendar.isDate(dt1, equalTo: dt2, toGranularity: .year) {
-                resultArray.append([]) // Start new row
-            }
-            }
-            resultArray[resultArray.count - 1].append(nextDate)
-        }
-        return resultArray
-    }
 }

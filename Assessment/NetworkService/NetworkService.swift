@@ -12,8 +12,8 @@ class  NetworkService: NSObject {
     
     static let sharedService = NetworkService()
     
-    func dataFromURLPath<T: Decodable>(fileName: String, completion: @escaping (T?, _ error: Error?) -> ()) {
-        if let path = Bundle.main.url(forResource: fileName, withExtension: FileExtension){
+    func dataFromURLPath<T: Decodable>(urlPath: URL?, completion: @escaping (T?, _ error: Error?) -> ()) {
+        if let path = urlPath{
             let session = URLSession.shared
             let task = session.dataTask(with: path) { (data, response, error) in
                 if let error = error{
@@ -27,7 +27,6 @@ class  NetworkService: NSObject {
                 do{
                     let jsonObj = try JSONDecoder().decode(T.self, from: dt)
                     completion(jsonObj, nil)
-
                 } catch let error{
                     completion(nil, error)
                 }
